@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>用Sikuli来自动化你的工作</title>
+  <meta name="viewport" content="width=1024, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  
+  <link rel="stylesheet" href="deck/core/deck.core.css" type="text/css" />
+  <link rel="stylesheet" href="deck/themes/transition/horizontal-slide.css" type="text/css" />
+  <link rel="stylesheet" href="deck/extensions/hash/deck.hash.css" type="text/css" />
+  <link rel="stylesheet" href="deck/extensions/menu/deck.menu.css" type="text/css" />
+  <link rel="stylesheet" href="deck/extensions/navigation/deck.navigation.css" type="text/css" />
+  <link rel="stylesheet" href="deck/extensions/status/deck.status.css" type="text/css" />
+  <link rel="stylesheet" href="index.css" type="text/css" />
+  
+  <script src="deck/modernizr.custom.js"></script>
+</head>
+<body>
+  <header>
+    <h1>用Sikuli来自动化你的工作</h1>
+  </header>
+  <div class="outer-container">
+    <article class="deck-container">
+      <section class="slide title">
+        <h1>
+          用Sikuli来自动化你的工作
+          <img src="resources/sikuli.png" alt="sikuli" />
+        </h1>
+        <h3 class="author">Xingkui@OpenFeint</h3>
+      </section>
+      <section class="slide">
+        <h2>
+          <a href="http://sikuli.org/">Sikuli</a>是什么？
+        </h2>
+        <ul>
+          <li>使用屏幕截图来自动化操作和测试用户界面的技术</li>
+          <li>脚本代码及IDE可运行于Mac，Windows和Linux。</li>
+          <li>编写的程序由屏幕截图，sikuli脚本和python代码组成</li>
+          <li>可以操作你的操作系统上看得见的东西，包括桌面应用程序，甚至vnc远程桌面或手机模拟器</li>
+          <li>开源研究型项目，由MIT计算机与人工智能实验室的用户界面设计组成员开发，主创来自台湾</li>
+        </ul>
+      </section>
+      <section class="slide">
+        <h2>
+          又一个自动化工具? 
+        </h2>
+        <h3>
+          不是已经有
+        </h3>
+        <ul>
+          <li>Autohotkey</li>
+          <li>Applescript, Auotmator</li>
+          <li>Selenium</li>
+          <li>LoadRunner</li>
+          <li>......</li>
+        </ul>
+      </section>
+      <section class="slide">
+        <h2>
+          来看Sikuli的Demo吧
+        </h2>
+        <div class="col2">
+          <iframe width="560" height="315" src="http://www.youtube.com/embed/8vtMArVWw8A" frameborder="0" allowfullscreen></iframe>
+          <iframe width="420" height="315" src="http://www.youtube.com/embed/HvIEKz6qQO0" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </section>
+      <section class="slide">
+        <h2>
+          来看Sikuli的Demo吧
+        </h2>
+        <div class="col2">
+          <iframe width="420" height="315" src="http://www.youtube.com/embed/QbKqlh-zcDA" frameborder="0" allowfullscreen></iframe>
+          <iframe width="420" height="315" src="http://www.youtube.com/embed/zhhm09ECcC8" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </section>
+      <section class="slide">
+        <h2>
+          更多的Demo
+        </h2>
+        <h3>
+          <a href="http://sikuli.org/demo.shtml">Sikuli Demo Page<a>
+        </h3>
+        <h3>
+          <a href="http://blog.sikuli.org/">Sikuli Blog</a>
+        </h3>
+      </section>
+      <section class="slide">
+        <h2>
+          还是来解决点实际问题吧
+        </h2>
+        <h3>
+          每次启动公司的VPN太费事了，能不能自动化一下？？？？？？？？
+        </h3>
+        <ol>
+          <li class="slide">打开NetExtender</li>
+          <li class="slide">输入我的vpn密码</li>
+          <li class="slide">又要求我输入一个临时密码？？</li>
+          <li class="slide">切换到邮件程序，等待临时密码邮件的到来</li>
+          <li class="slide">邮件来了！打开邮件，拷贝临时密码出来</li>
+          <li class="slide">回到vpn程序那个弹出框，把临时密码粘贴进去，点击OK</li>
+          <li class="slide">
+            <a href="http://blog.bolsolution.com/index.php/2011/07/01/3666/">
+              <img src="resources/tired.jpg" alt="tired" />
+            </a>
+          </li>
+        </ol>
+      </section>
+      <section class="slide">
+        <h2>
+          要不用Applesript,Ruby,Java之类的东西写一下???
+        </h2>
+        <h3 class="slide">
+          <a href="http://asuma.pixnet.net/album/photo/77966465-lima---%E7%9C%8B%E4%B8%8D%E6%87%82%E8%8F%9C%E5%96%AE">
+            <img src="resources/unknown.jpg" alt="unknown" />
+          </a>
+        </h3>
+        <h3 class="slide">
+          <a href="http://w.hudong.com/1216eb8eab1c4f7cb9c8caddcf85e7fd.html">
+            <img src="resources/coin.jpg" alt="coin" />
+          </a>
+        </h3>
+      </section>
+      <section class="slide">
+        <h2>
+          我们来用Sikuli试试吧
+        </h2>
+        <h3 class="slide">
+          来把连接VPN的那些手工操作步骤用Sikuli的脚本自动化
+        </h3>
+      </section>
+      <section class="slide">
+        <h2>
+          我们可以用Sikuli做什么
+        </h2>
+        <ul>
+          <li>运行程序</li>
+          <li>鼠标单击，双击</li>
+          <li>向文本框输入内容</li>
+          <li>使用全局快捷键</li>
+          <li>判断某些元素是否在界面上</li>
+          <li>
+            更多能力参看<a href="http://sikuli.org/docx/">Sikuli文档</a>
+          </li>
+        </ul>
+      </section>
+      <section class="slide">
+        <h2>
+          Sikuli的架构图
+        </h2>
+        <img src="resources/architecture.png" alt="archticture" />
+      </section>
+      <section class="slide">
+        <h2>
+          官方Slide
+        </h2>
+        <div style="width:595px" id="__ss_7068844"> <strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/vgod/practical-sikuli-using-screenshots-for-gui-automation-and-testing" title="Practical Sikuli: using screenshots for GUI automation and testing" target="_blank">Practical Sikuli: using screenshots for GUI automation and testing</a></strong> <iframe src="http://www.slideshare.net/slideshow/embed_code/7068844?rel=0" width="595" height="497" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe> <div style="padding:5px 0 12px"> View more <a href="http://www.slideshare.net/" target="_blank">presentations</a> from <a href="http://www.slideshare.net/vgod" target="_blank">vgod</a> </div> </div>
+      </section>
+      <!--QA-->
+      <section class="slide">
+        <h1>Q&A</h1>
+      </section>
+    </article>
+  </div>
+  <footer>
+    <p>Based on <a href="http://imakewebthings.github.com/deck.js">deck.js</a></p>
+  </footer>
+
+
+  <script src="deck/jquery-1.7.min.js"></script>
+  <script src="deck/core/deck.core.js"></script>
+  <script src="deck/extensions/hash/deck.hash.js"></script>
+  <script src="deck/extensions/menu/deck.menu.js"></script>
+  <script src="deck/extensions/navigation/deck.navigation.js"></script>
+  <script src="deck/extensions/status/deck.status.js"></script>
+
+
+  <!-- Initialize the deck. You can put this in an external file if desired. -->
+  <script>
+    $(function() {
+      $.deck('.slide');
+    });
+  </script>
+  <!--Google Analytics-->
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-9292873-8']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+</body>
+</html>
